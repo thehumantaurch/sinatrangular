@@ -30,6 +30,27 @@
 					"required": true
 				}
 			]
+		},
+		{
+			"name": "scripts",
+			"attrs": [
+				{
+					"attrName": "title",
+					"attrType": "String",
+					"minLength": "",
+					"maxLength": "",
+					"enumValues": [],
+					"required": true
+				},
+				{
+					"attrName": "author",
+					"attrType": "String",
+					"minLength": "",
+					"maxLength": "",
+					"enumValues": [],
+					"required": true
+				}
+			]
 		}
 	],
 	"resources": []

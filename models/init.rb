@@ -2,3 +2,5 @@
 
 require_relative 'users'
 
+require_relative 'scripts'
+

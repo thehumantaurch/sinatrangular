@@ -3,3 +3,5 @@ require_relative 'index'
 
 require_relative 'users'
 
+require_relative 'scripts'
+
