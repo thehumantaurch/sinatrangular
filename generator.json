@@ -1,6 +1,36 @@
 {
 	"baseName": "linecall",
 	"orm": "ar",
-	"entities": [],
+	"entities": [
+		{
+			"name": "users",
+			"attrs": [
+				{
+					"attrName": "email",
+					"attrType": "String",
+					"minLength": "",
+					"maxLength": "",
+					"enumValues": [],
+					"required": true
+				},
+				{
+					"attrName": "password",
+					"attrType": "String",
+					"minLength": "",
+					"maxLength": "",
+					"enumValues": [],
+					"required": true
+				},
+				{
+					"attrName": "access_level",
+					"attrType": "Integer",
+					"min": "",
+					"max": "",
+					"enumValues": [],
+					"required": true
+				}
+			]
+		}
+	],
 	"resources": []
 }
