@@ -14,4 +14,4 @@ gem 'sinatra-activerecord'
 gem 'sqlite3'#, platform: :mri_19, group: :development
 gem 'pg', platform: :mri_19, group: :production
 
-gem 'bcrypt'
+gem 'bcrypt-ruby'
