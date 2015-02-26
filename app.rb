@@ -7,7 +7,7 @@ class Linecall < Sinatra::Application
   enable :sessions
 
   configure :development do
-    set :database, "sqlite3:////tmp/my.db"
+    set :database, {adapter: "sqlite3", database: "linecall.sqlite3"}
     if (RUBY_PLATFORM == "java")
       require 'jdbc/sqlite3'
       Jdbc::SQLite3.load_driver
@@ -15,7 +15,7 @@ class Linecall < Sinatra::Application
   end
 
   configure :production do
-    set :database, 'postgres://postgres:12345@localhost/sinatra_service'
+    set :database, {adapter: "postgres", database: "linecall.posgres"}
     if (RUBY_PLATFORM == "java")
       require 'jdbc/postgres'
       Jdbc::Postgres.load_driver
